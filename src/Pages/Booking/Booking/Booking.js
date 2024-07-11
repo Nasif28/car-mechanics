@@ -6,7 +6,7 @@ const Booking = () => {
     const [service, setService] = useState({});
 
     useEffect(() => {
-        fetch(`http://localhost:5000/services/${serviceId}`)
+        fetch(`https://car-mechanics-server-ef4b.onrender.com/services/${serviceId}`)
             .then(res => res.json())
             .then(data => setService(data));
     }, [])
